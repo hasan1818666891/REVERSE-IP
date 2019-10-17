@@ -8,7 +8,7 @@ USE THIS TOOL AT YOUR OWN RISK.
 
 git clone https://github.com/josifkhan/Reverse-Eb
 
-pip install -r requirements.text
+pip install -r requirements.txt
 
 python3 reverse-eb.py
 
