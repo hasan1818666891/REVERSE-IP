@@ -81,31 +81,25 @@ os.system("clear")
 time.sleep(1)
 print(colored("""
 
-########  ######## ##     ## ######## ########   ######  ######## 
-##     ## ##       ##     ## ##       ##     ## ##    ## ##       
-##     ## ##       ##     ## ##       ##     ## ##       ##       
-########  ######   ##     ## ######   ########   ######  ######   
-##   ##   ##        ##   ##  ##       ##   ##         ## ##       
-##    ##  ##         ## ##   ##       ##    ##  ##    ## ##       
-##     ## ########    ###    ######## ##     ##  ######  ######## 
-        ######## ########                                         
-        ##       ##     ##                                        
-        ##       ##     ##                                        
-####### ######   ########                                         
-        ##       ##     ##                                        
-        ##       ##     ##                                        
-        ######## ########                                         
-*****************************************
-           WELCOME TO BANgLADESH                  
-                BANgLADESH                                           
-                  V1.0                                                       
-*****************************************
-                    
-                    """
-                    
-                    
-,"""green"""))
 
+{
+
+########
+##      ## *************************************
+#       ##    __Tutorial/Channel__[youtube.com/anonymousbghh]
+########
+########
+#       ##    __Repository__[https://github.com/josifkhan/]
+##      ##    __Author_Name__[MD Josif Khan]
+########_______________}
+
+_________                     ________________________________
+""","""red"""))
+print(colored("""
+                                        BANgLADESH
+                                           V1.0 """
+
+,"""yellow"""))
 
 inp=input(colored("Target IP: ", "green"))
 if inp=='':
@@ -122,11 +116,11 @@ if inp.startswith("https://"):
 	
 try:
 	get=requests.get(f"http://api.hackertarget.com/reverseiplookup/?q={inp}")
-	file=open("./Reversed-IPs.txt", "w")
+	file=open(f"./{inp}.txt", "w")
 	if get.text== "error check your search parameter":
 		sys.exit(colored(f" '{inp}' is not a valid address !", "yellow"))
 	else:
 		print(file.write(str(get.text)))
-		print(colored(f"Successfull Identified total IPs from '{inp}' Check Reversed-IPs.txt !", "green"))
+		print(colored(f"Successfully Identified total IPs from '{inp}' ! Check {inp}.txt file.", "green"))
 except Exception:
 	print(colored(f" °.° The address you entered '{inp}' is not Connectable ! \n Or check your Internet Connections, \nThank you.", "red"))
