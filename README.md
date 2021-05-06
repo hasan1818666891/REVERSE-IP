@@ -8,6 +8,8 @@ USE THIS TOOL AT YOUR OWN RISK.
 
 git clone https://github.com/josifkhan/Reverse-Domain
 
+cd Reverse-Domain
+
 pip install -r requirements.txt
 
 python3 reverse-domain.py
