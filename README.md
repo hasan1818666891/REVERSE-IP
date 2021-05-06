@@ -6,11 +6,11 @@ USE THIS TOOL AT YOUR OWN RISK.
 
 # INSTALLATIONS
 
-git clone https://github.com/josifkhan/Reverse-Eb
+git clone https://github.com/josifkhan/Reverse-Domain
 
 pip install -r requirements.txt
 
-python3 reverse-eb.py
+python3 reverse-domain.py
 
 # SUPPORTED PLATFORMS
 
